@@ -1,0 +1,13 @@
+{
+  "WordPress": {
+    "category": "CMS",
+    "html": ["/wp-content/", "/wp-includes/"],
+    "headers": { "X-Powered-By": "WordPress" },
+    "meta": { "generator": "(?i)wordpress" }
+  },
+  "React": {
+    "category": "Frontend Framework",
+    "html": ["data-reactroot", "_reactListening"],
+    "window": ["React", "__REACT_DEVTOOLS_GLOBAL_HOOK__"]
+  }
+}
