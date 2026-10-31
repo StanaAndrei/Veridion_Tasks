@@ -1,8 +1,8 @@
 from typing import List
 from google import genai
 from google.genai import types
-from Types.Company import Company
-from Types.QueryIntent import QueryIntent
+from models.company import Company
+from models.query_intent import QueryIntent
 
 
 def _dot_product(vec_a: List[float], vec_b: List[float]) -> float:

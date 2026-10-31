@@ -1,6 +1,6 @@
 from typing import List
 from pydantic import ValidationError
-from Types.Company import Company
+from models.company import Company
 
 
 def raw_companies(infile: str) -> List[Company]:

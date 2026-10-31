@@ -2,8 +2,8 @@ import json
 from google import genai
 from google.genai import types
 from typing import List
-from Types.Company import Company
-from Types.Qualification import FinalQualificationReport
+from models.company import Company
+from models.qualification import FinalQualificationReport
 
 
 def final_count(raw_companies: List[Company]) -> int:

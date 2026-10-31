@@ -1,7 +1,7 @@
 import click
 from hamilton import driver
 from pipe_stages import read, query_parser, hard_filter, semantic_filter, answer
-from Types.Qualification import FinalQualificationReport
+from models.qualification import FinalQualificationReport
 
 
 @click.command()

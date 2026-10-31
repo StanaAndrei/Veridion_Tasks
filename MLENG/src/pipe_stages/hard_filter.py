@@ -1,6 +1,6 @@
 from typing import List
-from Types.Company import Company
-from Types.QueryIntent import QueryIntent
+from models.company import Company
+from models.query_intent import QueryIntent
 
 
 def filtered_companies(raw_companies: List[Company], parsed_intent: QueryIntent) -> List[Company]:
@@ -19,7 +19,7 @@ def filtered_companies(raw_companies: List[Company], parsed_intent: QueryIntent)
                 if company.address.country_code.lower() not in [c.lower() for c in filters.country_codes]:
                     continue
 
-                    # --- 2. Public / Private Status Filter ---
+        # --- 2. Public / Private Status Filter ---
         if filters.is_public is not None:
             if company.is_public != filters.is_public:
                 continue

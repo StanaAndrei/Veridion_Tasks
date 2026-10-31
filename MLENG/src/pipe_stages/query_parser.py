@@ -1,7 +1,7 @@
 import os
 from google import genai
 from google.genai import types
-from Types.QueryIntent import QueryIntent
+from models.query_intent import QueryIntent
 
 
 def parsed_intent(query: str) -> QueryIntent:
